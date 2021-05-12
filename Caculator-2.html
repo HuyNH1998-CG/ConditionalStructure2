@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+  <style>
+    button {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+<form name="cacl">
+  <table border="5" cellspacing="4">
+    <tr>
+      <th colspan="4"><input type="text" id="display"></th>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="input('1')">1</button></td>
+      <td><button type="button" onclick="input('2')">2</button></td>
+      <td><button type="button" onclick="input('3')">3</button></td>
+      <td><button type="button" onclick="input('+')">+</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="input('4')">4</button></td>
+      <td><button type="button" onclick="input('5')">5</button></td>
+      <td><button type="button" onclick="input('6')">6</button></td>
+      <td><button type="button" onclick="input('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="input('7')">7</button></td>
+      <td><button type="button" onclick="input('8')">8</button></td>
+      <td><button type="button" onclick="input('9')">9</button></td>
+      <td><button type="button" onclick="input('*')">x</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="clr()">C</button></td>
+      <td><button type="button" onclick="input('0')">0</button></td>
+      <td><button type="button" onclick="equal()">=</button></td>
+      <td><button type="button" onclick="input('/')">/</button></td>
+    </tr>
+  </table>
+</form>
+<script src="Caculator-2.js">
+</script>
+</body>
+</html>

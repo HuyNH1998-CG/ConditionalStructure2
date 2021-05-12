@@ -6,9 +6,10 @@
 </head>
 <body>
 <script>
+    debugger
   let a = 5;
-  let b = (a++) + 2 + a;
-  let c = (b++) + 1 + (--a)
+  let b = (++a) + 3 + (a++);
+  let c = (b--) + (++a)
   document.write(a, b, c)
 </script>
 </body>
