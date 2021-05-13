@@ -4,6 +4,6 @@ function YIS() {
 }
 function NO() {
     let element = document.getElementById("NO");
-    element.style.left = (Math.random()*1000) + 'px';
-    element.style.top = (Math.random()*1000) + 'px';
+    element.style.left = (Math.random()* window.innerWidth) + 'px';
+    element.style.top = (Math.random()*window.innerHeight) + 'px';
 }
