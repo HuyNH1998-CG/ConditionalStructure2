@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XepHangHocLuc</title>
+</head>
+<body>
+<script>
+    let kt1 = +prompt("Nhap diem kt1 (1-10)");
+    let kt2 = +prompt("Nhap diem kt2 (1-10)");
+    let kt3 = +prompt("Nhap diem kt3 (1-10)");
+    let kt4 = +prompt("Nhap diem kt4 (1-10)");
+    let gk = +prompt("Nhap diem giua ky (1-10)");
+    let ck = +prompt("Nhap diem cuoi ky (1-10)");
+    let avg = ((kt1 + kt2 + kt3 + kt4) / 4 + gk + ck) / 3;
+    if (avg <= 3) {
+        alert(avg + ";Hoc luc kem ")
+    } else if (avg <= 5) {
+        alert(avg + ";Hoc luc trung binh")
+    } else if (avg <= 7) {
+        alert(avg + ";Hoc luc kha")
+    } else {
+        alert(avg + ";Hoc luc gioi")
+    }
+</script>
+</body>
+</html>

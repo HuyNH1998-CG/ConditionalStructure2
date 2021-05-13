@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KPI</title>
+</head>
+<body>
+<script>
+  let DoanhSo = + prompt("Nhap doanh so vao day");
+  let HoaHong;
+  if (DoanhSo <= 500000) {
+    HoaHong = DoanhSo / 100 * 10;
+    alert("Hoa hong cua ban la " + HoaHong);
+  } else if (DoanhSo <= 5000000) {
+    HoaHong = DoanhSo / 100 * 30
+    alert("Hoa hong cua ban la " + HoaHong);
+  } else {
+    HoaHong = DoanhSo / 100 * 50
+    alert("Hoa hong cua ban la " + HoaHong);
+  }
+</script>
+</body>
+</html>

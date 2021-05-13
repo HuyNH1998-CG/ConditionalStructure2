@@ -34,11 +34,11 @@ function nextImagez() {
 
 function check() {
     if ((imageIndex == 0) && (imageIndexx == 0) && (imageIndexz == 0)) {
-        document.getElementById("Clear").innerHTML = "CLEAR"
+        alert("Clear");
     } else if ((imageIndex == 1) && (imageIndexx == 1) && (imageIndexz == 1)) {
-        document.getElementById("Clear").innerHTML = "CLEAR"
+        alert("Clear");
     } else if ((imageIndex == 2) && (imageIndexx == 2) && (imageIndexz == 2)) {
-        document.getElementById("Clear").innerHTML = "CLEAR"
+        alert("Clear");
     }
 }
 
