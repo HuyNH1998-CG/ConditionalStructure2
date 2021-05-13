@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi B1-7</title>
+</head>
+<body>
+<script>
+    let init = +prompt("What you want? 1 = degree C to F, 2 = meter to feet, 3 = square S, 4 = Rectangle S, 5 = Squared Triangle S, 6 = PT bac 1, 7 = PT b2, 8 = age check, 9 = triangle side check, 10 = electric bill check, 11 = thue thu nhap ca nhan, 12 = bank interest")
+    if (init == 1) {
+        let C = +prompt("Input C degree here");
+        let F = C * 9 / 5 + 32;
+        alert("F is " + F)
+    } else if (init == 2) {
+        let m = +prompt("Input meter here");
+        let ft = m * 3.2808;
+        alert("Ft is " + ft)
+    } else if (init == 3) {
+        let a = +prompt("Input a side");
+        let s = a * a;
+        alert("Square S is " + s)
+    } else if (init == 4) {
+        let a = +prompt("Input a side");
+        let b = +prompt("Input b side");
+        let s = a * b;
+        alert("Rectangle S is " + s)
+    } else if (init == 5) {
+        let a = +prompt("Input a side");
+        let b = +prompt("Input b side");
+        let s = (a * b) / 2;
+        alert("Squared Triangle S is " + s)
+    } else if (init == 6) {
+        let a = +prompt("input a");
+        let b = +prompt("input b");
+        if (a != 0) {
+            let x = (0 - b) / a
+            alert("x = " + x)
+        } else {
+            if (b == 0) {
+                alert("to Infinity and beyond");
+            } else if (b != 0) {
+                alert("None")
+            }
+        }
+    } else if (init == 7) {
+        let a = +prompt("Input a")
+        let b = +prompt("Input b")
+        let c = +prompt("Input c")
+        let x;
+        if (a == 0) {
+            x = (-c / b);
+            alert("x = " + x);
+        } else {
+            let delta = b ** 2 - (4 * a * c)
+            let sq = Math.sqrt(delta)
+            if (delta < 0) {
+                alert("VN")
+            } else if (delta == 0) {
+                let x = -b / (2 * a);
+                alert("x = " + x)
+            } else {
+                let x1 = (-b + sq) / (2 * a);
+                let x2 = (-b - sq) / (2 * a);
+                alert("x1 = " + x1);
+                alert("x2 = " + x2);
+            }
+        }
+    } else if (init == 8) {
+        let t = +prompt("Nhap tuoi tu 0 den 120");
+        if ((0 <= t) && (t <= 120)) {
+            alert(t + " la tuoi cua nguoi nay")
+        } else {
+            alert("khong phai tuoi cua mot nguoi");
+        }
+    } else if (init == 9) {
+        let a = +prompt("Input Triangle side a");
+        let b = +prompt("Input Triangle side b");
+        let c = +prompt("Input Triangle side c");
+        if ((a, b, c) > 0 , ((a + b) > c && (b + c) > a && (a + c) > b)) {
+            alert(a + "," + b + "," + c + "," + " la cac canh cua 1 tam giac")
+        }
+    } else if (init == 10) {
+        let a = +prompt("Input Electric number");
+        let elecBill;
+        if (a >= 0) {
+            elecBill = a * 1568;
+            alert(elecBill + " la so tien dien cua ban");
+        } else if (a >= 51) {
+            elecBill = a * 1624;
+            alert(elecBill + " la so tien dien cua ban");
+        } else if (a >= 101) {
+            elecBill = a * 1839;
+            alert(elecBill + " la so tien dien cua ban");
+        } else if (a >= 201) {
+            elecBill = a * 2327;
+            alert(elecBill + " la so tien dien cua ban");
+        } else if (a >= 301) {
+            elecBill = a * 2625;
+            alert(elecBill + " la so tien dien cua ban");
+        } else if (a >= 401) {
+            elecBill = a * 2173;
+            alert(elecBill + " la so tien dien cua ban");
+        }
+    } else if (init == 11) {
+        alert("Đây là công thức tính thuế thu nhập cá nhân không bao gồm các khoản giảm trừ như BHXH hay người phụ thuộc , v.v. Chỉ dùng để tính đến mức tương đối.");
+        let a = prompt("Điền thu nhập hàng tháng");
+        let tax;
+        if (a <= 5000000) {
+            tax = a / 100 * 5;
+            alert("Muc thue cua ban la " + tax);
+        } else if (a <= 10000000) {
+            tax = a / 100 * 10;
+            alert("Muc thue cua ban la " + tax);
+        } else if (a <= 18000000) {
+            tax = a / 100 * 15;
+            alert("Muc thue cua ban la " + tax);
+        } else if (a <= 32000000) {
+            tax = a / 100 * 20;
+            alert("Muc thue cua ban la " + tax);
+        } else if (a <= 52000000) {
+            tax = a / 100 * 15;
+            alert("Muc thue cua ban la " + tax);
+        } else if (a <= 80000000) {
+            tax = a / 100 * 30;
+            alert("Muc thue cua ban la " + tax);
+        } else{
+            tax = a / 100 * 15;
+            alert("Muc thue cua ban la " + tax);
+        }
+
+    } else if (init == 12) {
+        alert("Bạn sắp tính tiền vay lãi ngân hàng. Người viết chương trình không chịu trách nhiệm đói với các trường hợp sai số. Phép tính hiện tại chỉ tính theo hình thức tính lãi suất theo dư nợ gốc.");
+        let a = +prompt("Nhập số tiền vay");
+        let b = +prompt("Nhập kỳ hạn vay (tính theo tháng)");
+        let c = +prompt("Nhập lãi suất của ngân hàng");
+        let monthlyInterest = a /100 * c /b
+        let bankInterest = a / b + monthlyInterest
+        alert(bankInterest + " là số tiền bạn phải trả ngân hàng hàng tháng");
+
+    }
+</script>
+</body>
+</html>
