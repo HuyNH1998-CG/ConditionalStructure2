@@ -34,11 +34,23 @@ function nextImagez() {
 
 function check() {
     if ((imageIndex == 0) && (imageIndexx == 0) && (imageIndexz == 0)) {
-        alert("Clear");
+        document.getElementById("1").style.boxShadow = "10px 20px 30px lightblue";
+        document.getElementById("2").style.boxShadow = "10px 20px 30px lightblue";
+        document.getElementById("3").style.boxShadow = "10px 20px 30px lightblue";
     } else if ((imageIndex == 1) && (imageIndexx == 1) && (imageIndexz == 1)) {
-        alert("Clear");
+        document.getElementById("1").style.boxShadow = "10px 20px 30px lightblue";
+        document.getElementById("2").style.boxShadow = "10px 20px 30px lightblue";
+        document.getElementById("3").style.boxShadow = "10px 20px 30px lightblue";
     } else if ((imageIndex == 2) && (imageIndexx == 2) && (imageIndexz == 2)) {
-        alert("Clear");
+        document.getElementById("1").style.boxShadow = "10px 20px 30px lightblue";
+        document.getElementById("2").style.boxShadow = "10px 20px 30px lightblue";
+        document.getElementById("3").style.boxShadow = "10px 20px 30px lightblue";
+    }
+    else {
+        document.getElementById("1").style.boxShadow = "";
+        document.getElementById("2").style.boxShadow = "";
+        document.getElementById("3").style.boxShadow = "";
+
     }
 }
 
